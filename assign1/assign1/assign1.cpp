@@ -43,8 +43,6 @@ int main()
 
 int calcBill( int reqamt)
 {
-	string no; 
-	
 	int $1 = 0, $5 = 0, $10 = 0, $20 = 0, $50 = 0;
 	$50 = reqamt / 50;
 	reqamt = reqamt % 50;
@@ -60,7 +58,7 @@ int calcBill( int reqamt)
 	// print out results, prevent 0 from being listed if there are no bills 
 
 	if ($50 < 1)
-		cout << "you have no " << "$50 bills." << endl; 
+		cout << "you have no $50 bills." << endl; 
 	else 
 	cout << "you have " << $50 <<" $50 bills." << endl;
 	if ($20 < 1)
